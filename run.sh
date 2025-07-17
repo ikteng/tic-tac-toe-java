@@ -1,2 +1,3 @@
 javac *.java
-java Main
+# java Main # console based
+Java TicTacToeGUI # Java Swing
