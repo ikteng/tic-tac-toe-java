@@ -6,6 +6,8 @@ A simple Java implementation of the classic Tic-Tac-Toe game featuring:
 - **GUI-based** play using Java Swing (Player vs AI with a graphical interface)
 - AI powered by the **Minimax algorithm** for optimal moves
 
+Python (console-based) version: https://github.com/ikteng/tic-tac-toe-python
+
 ---
 
 ## Running the Game
