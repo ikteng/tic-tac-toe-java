@@ -1,4 +1,4 @@
-# Tic Tac Toe
+# Tic Tac Toe with AI
 
 A simple Java implementation of the classic Tic-Tac-Toe game featuring:
 
