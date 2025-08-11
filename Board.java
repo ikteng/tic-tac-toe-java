@@ -92,4 +92,24 @@ public class Board {
                 board[i][j] = ' ';
     }
 
+    public int[][] getWinningLine(char player) {
+        // Check rows
+        for (int i = 0; i < 3; i++) {
+            if (board[i][0] == player && board[i][1] == player && board[i][2] == player)
+                return new int[][] { {i,0}, {i,1}, {i,2} };
+        }
+        // Check columns
+        for (int i = 0; i < 3; i++) {
+            if (board[0][i] == player && board[1][i] == player && board[2][i] == player)
+                return new int[][] { {0,i}, {1,i}, {2,i} };
+        }
+        // Check diagonals
+        if (board[0][0] == player && board[1][1] == player && board[2][2] == player)
+            return new int[][] { {0,0}, {1,1}, {2,2} };
+        if (board[0][2] == player && board[1][1] == player && board[2][0] == player)
+            return new int[][] { {0,2}, {1,1}, {2,0} };
+
+        return null; // No winning line
+    }
+
 }
